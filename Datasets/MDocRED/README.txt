@@ -1,1 +1,1 @@
-The total dataset keeps uploading. 
+The whole dataset keeps uploading. 
