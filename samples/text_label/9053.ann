@@ -1,0 +1,58 @@
+T1	Object 26 32	makeup
+T2	Object 2234 2237	化妆品
+T3	Person 2258 2263	美容爱好者
+T4	Person 70 81	beauty fans
+R1	working_on Arg1:T4 Arg2:T1	
+R2	working_on Arg1:T3 Arg2:T2	
+T5	Organization 85 94	Beautycon
+R3	member_of Arg1:T4 Arg2:T5	
+T6	Organization 2254 2257	美丽城
+R4	member_of Arg1:T3 Arg2:T6	
+T7	Person 2371 2374	普通人
+T8	Person 331 346	everyday people
+R5	instance_of Arg1:T8 Arg2:T4	
+R6	member_of Arg1:T8 Arg2:T5	
+R7	working_on Arg1:T8 Arg2:T1	
+R8	instance_of Arg1:T7 Arg2:T3	
+R9	member_of Arg1:T7 Arg2:T6	
+R10	working_on Arg1:T7 Arg2:T2	
+T9	Person 2537 2544	纳布拉· 诺儿
+T10	Person 2525 2537	孟加拉裔美国穆斯林，网红
+R11	same_mention Arg1:T10 Arg2:T9	
+R12	instance_of Arg1:T9 Arg2:T3	
+R13	industry_peer Arg1:T9 Arg2:T7	
+R14	leader_of Arg1:T9 Arg2:T6	
+R15	working_on Arg1:T9 Arg2:T2	
+T11	Person 860 899	Muslim Bangladeshi -American influencer
+T12	Person 900 911	Nabela Noor
+R16	same_mention Arg1:T11 Arg2:T12	
+R17	industry_peer Arg1:T12 Arg2:T8	
+R18	instance_of Arg1:T12 Arg2:T4	
+R19	leader_of Arg1:T12 Arg2:T5	
+R20	working_on Arg1:T12 Arg2:T1	
+T13	Person 2636 2637	我
+R21	same_mention Arg1:T13 Arg2:T9	
+T14	Person 1189 1190	I
+R22	same_mention Arg1:T14 Arg2:T12	
+T15	Person 2705 2713	东京· 史戴尔兹
+R23	industry_peer Arg1:T15 Arg2:T9	
+R24	working_on Arg1:T15 Arg2:T2	
+R25	member_of Arg1:T15 Arg2:T6	
+T16	Person 1380 1392	Tokyo Stylez
+R26	industry_peer Arg1:T16 Arg2:T12	
+R27	working_on Arg1:T16 Arg2:T1	
+R28	member_of Arg1:T16 Arg2:T5	
+T17	Person 2828 2833	雷·博伊斯
+R29	industry_peer Arg1:T17 Arg2:T15	
+R30	industry_peer Arg1:T17 Arg2:T9	
+R31	member_of Arg1:T17 Arg2:T6	
+R32	working_on Arg1:T17 Arg2:T2	
+T18	Person 1681 1691	Raye Boyce
+R33	industry_peer Arg1:T18 Arg2:T16	
+R34	industry_peer Arg1:T18 Arg2:T12	
+R35	member_of Arg1:T18 Arg2:T5	
+R36	working_on Arg1:T18 Arg2:T1	
+T19	Person 2864 2865	我
+R37	same_mention Arg1:T19 Arg2:T17	
+T20	Person 1782 1783	I
+R38	same_mention Arg1:T20 Arg2:T18	

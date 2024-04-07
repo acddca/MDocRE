@@ -1,0 +1,40 @@
+T1	Person 0 22	Sheikh Mrat Alpeshimam
+T2	Person 1680 1682	谢赫
+T3	Person 1688 1690	孩子
+R1	relative_of Arg1:T3 Arg2:T2	
+T4	Person 46 54	children
+R2	relative_of Arg1:T4 Arg2:T1	
+T5	Organization 1719 1727	伊斯兰国极端组织
+T6	Location 95 101	Yazidi
+T7	Location 1693 1696	雅兹迪
+T8	Organization 158 182	Islamic state extremists
+R3	located_in Arg1:T8 Arg2:T6	
+R4	located_in Arg1:T5 Arg2:T7	
+T9	Person 1825 1829	雅兹迪人
+R5	instance_of Arg1:T2 Arg2:T9	
+T10	Person 1820 1824	谢赫一家
+R6	same_mention Arg1:T10 Arg2:T2	
+T11	Person 426 446	Sheikh Mrat’s family
+T12	Person 451 458	Yazidis
+R7	same_mention Arg1:T11 Arg2:T1	
+R8	instance_of Arg1:T1 Arg2:T12	
+T13	Location 1836 1839	伊拉克
+R9	close_to Arg1:T13 Arg2:T7	
+T14	Location 510 514	Iraq
+R10	located_in Arg1:T6 Arg2:T14	
+T15	Location 1989 1991	家乡
+R11	same_mention Arg1:T15 Arg2:T7	
+T16	Location 968 975	village
+R12	same_mention Arg1:T16 Arg2:T6	
+T17	Person 2018 2022	谢赫一家
+R13	same_mention Arg1:T17 Arg2:T2	
+T18	Person 2084 2090	我四岁的孩子
+R14	relative_of Arg1:T18 Arg2:T2	
+T19	Person 1039 1058	Mrat and his family
+T20	Person 1261 1283	my four-year-old child
+R15	same_mention Arg1:T19 Arg2:T1	
+R16	relative_of Arg1:T20 Arg2:T1	
+T21	Location 2135 2139	亚美尼亚
+R17	close_to Arg1:T21 Arg2:T13	
+T22	Location 1427 1434	Armenia
+R18	close_to Arg1:T22 Arg2:T14	

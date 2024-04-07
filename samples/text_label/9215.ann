@@ -1,0 +1,44 @@
+T1	Organization 2220 2228	Facebook
+T2	Organization 11 19	Facebook
+T5	Person 2280 2290	Facebook股东
+R1	leader_of Arg1:T5 Arg2:T1	
+T6	Person 191 212	Facebook shareholders
+R2	leader_of Arg1:T6 Arg2:T2	
+T3	Person 2391 2395	扎克伯格
+R3	leader_of Arg1:T3 Arg2:T1	
+R4	leader_of Arg1:T3 Arg2:T5	
+T7	Person 497 512	Mark Zuckerberg
+R5	leader_of Arg1:T7 Arg2:T2	
+R6	leader_of Arg1:T7 Arg2:T6	
+T4	Person 2446 2460	Facebook的首席执行官
+R7	same_mention Arg1:T4 Arg2:T3	
+T8	Object 2421 2431	Facebook数据
+R8	working_on Arg1:T3 Arg2:T8	
+R9	working_on Arg1:T5 Arg2:T8	
+R10	belongs_to Arg1:T8 Arg2:T1	
+T9	Object 624 637	Facebook data
+T10	Person 683 695	Facebook CEO
+R11	same_mention Arg1:T10 Arg2:T7	
+R12	working_on Arg1:T7 Arg2:T9	
+R13	working_on Arg1:T6 Arg2:T9	
+R14	belongs_to Arg1:T9 Arg2:T2	
+T11	Person 2614 2626	Natasha Lamb
+R15	industry_peer Arg1:T11 Arg2:T3	
+R16	industry_peer Arg1:T11 Arg2:T5	
+T12	Person 1107 1119	Natasha Lamb
+R17	industry_peer Arg1:T12 Arg2:T7	
+R18	industry_peer Arg1:T12 Arg2:T6	
+T13	Person 2706 2707	她
+R19	same_mention Arg1:T13 Arg2:T11	
+T14	Object 2899 2909	Facebook股价
+R20	working_on Arg1:T11 Arg2:T14	
+R21	part_of Arg1:T14 Arg2:T8	
+R22	belongs_to Arg1:T14 Arg2:T1	
+R23	working_on Arg1:T3 Arg2:T14	
+T15	Person 1585 1588	she
+R24	same_mention Arg1:T15 Arg2:T12	
+T16	Object 2129 2149	Facebook stock price
+R25	working_on Arg1:T12 Arg2:T16	
+R26	working_on Arg1:T7 Arg2:T16	
+R27	part_of Arg1:T16 Arg2:T9	
+R28	belongs_to Arg1:T16 Arg2:T2	

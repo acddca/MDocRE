@@ -1,0 +1,52 @@
+T1	Organization 2389 2394	德克萨斯州
+T2	Organization 0 18	The state of Texas
+T3	Person 2429 2436	德克萨斯州州长
+T4	Person 2436 2443	格雷格·阿博特
+R1	same_mention Arg1:T3 Arg2:T4	
+R2	leader_of Arg1:T4 Arg2:T1	
+T5	Person 122 136	Texas governor
+T6	Person 137 148	Greg Abbott
+R3	same_mention Arg1:T5 Arg2:T6	
+R4	leader_of Arg1:T6 Arg2:T2	
+T7	Object 2515 2521	飓风“哈维”
+R5	working_on Arg1:T4 Arg2:T7	
+T8	Object 372 388	Hurricane Harvey
+R6	working_on Arg1:T6 Arg2:T8	
+T9	Person 2572 2575	阿博特
+R7	same_mention Arg1:T9 Arg2:T4	
+T10	Person 568 574	Abbott
+R8	same_mention Arg1:T10 Arg2:T6	
+T11	Object 2587 2591	追踪技术
+R9	belongs_to Arg1:T11 Arg2:T1	
+R10	working_on Arg1:T4 Arg2:T11	
+T12	Object 612 631	tracking technology
+R11	belongs_to Arg1:T12 Arg2:T2	
+R12	working_on Arg1:T6 Arg2:T12	
+T13	Object 2651 2653	风暴
+R13	same_mention Arg1:T13 Arg2:T7	
+T14	Object 849 855	storms
+R14	same_mention Arg1:T14 Arg2:T8	
+T15	Organization 2609 2617	州政府和地方政府
+R15	same_mention Arg1:T15 Arg2:T1	
+T16	Organization 700 727	State and local governments
+R16	same_mention Arg1:T16 Arg2:T2	
+T17	Person 2779 2782	特朗普
+R17	leader_of Arg1:T17 Arg2:T1	
+R18	leader_of Arg1:T17 Arg2:T4	
+R19	working_on Arg1:T17 Arg2:T7	
+T18	Person 1241 1246	Trump
+R20	working_on Arg1:T18 Arg2:T8	
+R21	leader_of Arg1:T18 Arg2:T2	
+R22	leader_of Arg1:T18 Arg2:T6	
+T19	Person 2995 3001	紧急事务官员
+R23	leader_of Arg1:T17 Arg2:T19	
+R24	member_of Arg1:T19 Arg2:T1	
+R25	leader_of Arg1:T4 Arg2:T19	
+R26	working_on Arg1:T19 Arg2:T11	
+R27	working_on Arg1:T19 Arg2:T7	
+T20	Person 1891 1910	Emergency Officials
+R28	member_of Arg1:T20 Arg2:T2	
+R29	leader_of Arg1:T6 Arg2:T20	
+R30	leader_of Arg1:T18 Arg2:T20	
+R31	working_on Arg1:T20 Arg2:T12	
+R32	working_on Arg1:T20 Arg2:T8	

@@ -1,0 +1,66 @@
+T1	Location 281 301	Indianapolis Indiana
+T2	Location 2226 2234	印第安纳波利斯市
+T3	Organization 30 50	technology companies
+R1	located_in Arg1:T3 Arg2:T1	
+T4	Organization 2138 2142	科技公司
+R2	located_in Arg1:T4 Arg2:T2	
+T5	Person 2260 2267	考特尼·斯宾塞
+T6	Person 382 397	Courtney Spence
+R3	member_of Arg1:T6 Arg2:T3	
+R4	member_of Arg1:T5 Arg2:T4	
+T7	Organization 2270 2274	肯齐学院
+R5	founder_of Arg1:T5 Arg2:T7	
+R6	located_in Arg1:T7 Arg2:T2	
+T8	Organization 2278 2286	一所软件编码大学
+R7	same_mention Arg1:T8 Arg2:T7	
+T9	Organization 427 446	a coding University
+T10	Organization 406 420	Kenzie Academy
+R8	same_mention Arg1:T9 Arg2:T10	
+R9	located_in Arg1:T10 Arg2:T1	
+R10	founder_of Arg1:T6 Arg2:T10	
+T11	Person 2321 2329	史蒂夫·赫什伯格
+R11	agree_with Arg1:T11 Arg2:T5	
+R12	member_of Arg1:T11 Arg2:T4	
+T12	Person 543 560	Steve Hershberger
+R13	member_of Arg1:T12 Arg2:T3	
+R14	agree_with Arg1:T12 Arg2:T6	
+T13	Person 2344 2352	肯齐学院的实习生
+R15	member_of Arg1:T13 Arg2:T7	
+R16	leader_of Arg1:T5 Arg2:T13	
+T14	Person 571 591	local Kenzie interns
+R17	leader_of Arg1:T6 Arg2:T14	
+R18	member_of Arg1:T14 Arg2:T10	
+T15	Person 2429 2436	米娅·威廉姆斯
+R19	instance_of Arg1:T15 Arg2:T13	
+R20	member_of Arg1:T15 Arg2:T7	
+R21	leader_of Arg1:T5 Arg2:T15	
+T16	Person 846 858	Mya Williams
+R22	instance_of Arg1:T16 Arg2:T14	
+R23	leader_of Arg1:T6 Arg2:T16	
+R24	member_of Arg1:T16 Arg2:T10	
+T17	Person 2463 2464	她
+R25	same_mention Arg1:T17 Arg2:T15	
+T18	Person 927 930	she
+R26	same_mention Arg1:T18 Arg2:T16	
+T19	Object 2482 2488	医学软件工程
+R27	working_on Arg1:T15 Arg2:T19	
+R28	belongs_to Arg1:T19 Arg2:T7	
+T20	Object 977 1005	medical software engineering
+R29	working_on Arg1:T16 Arg2:T20	
+R30	belongs_to Arg1:T20 Arg2:T10	
+T21	Person 2578 2586	卡薇莎·卡玛巴布
+R31	industry_peer Arg1:T21 Arg2:T15	
+R32	working_on Arg1:T21 Arg2:T19	
+R33	member_of Arg1:T21 Arg2:T7	
+R34	instance_of Arg1:T21 Arg2:T13	
+R35	leader_of Arg1:T5 Arg2:T21	
+T22	Person 1302 1319	Kavitha Kamalbabu
+R36	working_on Arg1:T22 Arg2:T20	
+R37	industry_peer Arg1:T22 Arg2:T16	
+R38	member_of Arg1:T22 Arg2:T10	
+R39	leader_of Arg1:T6 Arg2:T22	
+R40	instance_of Arg1:T22 Arg2:T14	
+T23	Person 2659 2663	卡玛巴布
+R41	same_mention Arg1:T23 Arg2:T21	
+T24	Person 1509 1518	Kamalbabu
+R42	same_mention Arg1:T24 Arg2:T22	

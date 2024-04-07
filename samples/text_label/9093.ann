@@ -1,0 +1,48 @@
+T1	Person 1681 1685	美国总统
+T2	Person 1685 1692	唐纳德·特朗普
+R1	same_mention Arg1:T1 Arg2:T2	
+T3	Person 0 12	US president
+T4	Person 13 25	Donald Trump
+R2	same_mention Arg1:T3 Arg2:T4	
+T5	Person 1734 1737	蓬佩奥
+T6	Person 1698 1705	美国最高外交官
+R3	same_mention Arg1:T6 Arg2:T5	
+R4	leader_of Arg1:T2 Arg2:T5	
+T7	Person 173 189	Secretary Pompeo
+T8	Person 48 73	the nation’s top diplomat
+R5	same_mention Arg1:T8 Arg2:T7	
+R6	leader_of Arg1:T4 Arg2:T7	
+T9	Location 1707 1709	朝鲜
+T10	Location 80 91	North Korea
+T11	Location 201 210	Pyongyang
+T12	Location 1738 1740	平壤
+R7	capital_of Arg1:T12 Arg2:T9	
+R8	capital_of Arg1:T11 Arg2:T10	
+T13	Person 1752 1755	金正恩
+R9	industry_peer Arg1:T13 Arg2:T2	
+T14	Person 272 284	Kim Jeong-un
+R10	industry_peer Arg1:T14 Arg2:T4	
+T15	Person 289 304	President Trump
+R11	same_mention Arg1:T15 Arg2:T4	
+T16	Person 1756 1759	特朗普
+R12	same_mention Arg1:T16 Arg2:T2	
+T17	Organization 1801 1803	朝鲜
+R13	located_in Arg1:T17 Arg2:T12	
+R14	president_of Arg1:T13 Arg2:T17	
+T18	Organization 424 435	North Korea
+R15	located_in Arg1:T18 Arg2:T11	
+R16	president_of Arg1:T14 Arg2:T18	
+T19	Person 1919 1923	美方官员
+R17	leader_of Arg1:T2 Arg2:T19	
+R18	leader_of Arg1:T5 Arg2:T19	
+T20	Person 754 767	US officially
+R19	leader_of Arg1:T4 Arg2:T20	
+R20	leader_of Arg1:T7 Arg2:T20	
+T21	Person 2008 2009	我
+R21	same_mention Arg1:T21 Arg2:T19	
+T22	Person 1096 1097	I
+R22	same_mention Arg1:T22 Arg2:T20	
+T23	Person 2123 2128	特朗普总统
+R23	same_mention Arg1:T23 Arg2:T2	
+T24	Person 1480 1495	President Trump
+R24	same_mention Arg1:T24 Arg2:T4	

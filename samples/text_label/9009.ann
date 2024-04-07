@@ -1,0 +1,56 @@
+T1	Person 2333 2341	迈克尔·菲尔普斯
+T2	Person 0 14	Michael Phelps
+T3	Person 20 31	multitasker
+R1	same_mention Arg1:T3 Arg2:T2	
+T4	Person 2344 2350	一心多用的人
+R2	same_mention Arg1:T4 Arg2:T1	
+T5	Person 2377 2392	史上获得奖牌总数最多的奥运选手
+R3	same_mention Arg1:T5 Arg2:T1	
+T6	Person 126 164	The most decorated Olympian in history
+R4	same_mention Arg1:T6 Arg2:T2	
+T7	Object 2423 2424	水
+T8	Object 2416 2420	节约用水
+R5	part_of Arg1:T8 Arg2:T7	
+R6	working_on Arg1:T1 Arg2:T7	
+R7	working_on Arg1:T1 Arg2:T8	
+T9	Object 234 246	saving water
+T10	Object 248 253	Water
+R8	part_of Arg1:T9 Arg2:T10	
+R9	working_on Arg1:T2 Arg2:T10	
+R10	working_on Arg1:T2 Arg2:T9	
+T11	Person 2367 2368	我
+R11	same_mention Arg1:T11 Arg2:T1	
+T12	Person 70 71	I
+R12	same_mention Arg1:T12 Arg2:T2	
+T13	Person 2491 2495	菲尔普斯
+R13	same_mention Arg1:T13 Arg2:T1	
+T14	Person 444 450	Phelps
+R14	same_mention Arg1:T14 Arg2:T2	
+T15	Organization 2498 2501	高露洁
+R15	belongs_to Arg1:T7 Arg2:T15	
+R16	member_of Arg1:T1 Arg2:T15	
+T16	Organization 470 477	Colgate
+R17	belongs_to Arg1:T10 Arg2:T16	
+R18	member_of Arg1:T2 Arg2:T16	
+T17	Object 2564 2566	刷牙
+R19	belongs_to Arg1:T17 Arg2:T15	
+R20	working_on Arg1:T1 Arg2:T17	
+R21	part_of Arg1:T7 Arg2:T17	
+T18	Object 744 749	brush
+R22	belongs_to Arg1:T18 Arg2:T16	
+R23	part_of Arg1:T10 Arg2:T18	
+R24	working_on Arg1:T2 Arg2:T18	
+R25	part_of Arg1:T9 Arg2:T18	
+R26	part_of Arg1:T8 Arg2:T17	
+T19	Object 2654 2664	一个水活化的排放标签
+R27	instance_of Arg1:T19 Arg2:T8	
+R28	working_on Arg1:T1 Arg2:T19	
+R29	belongs_to Arg1:T19 Arg2:T15	
+T20	Object 1013 1044	a water activated drain sticker
+R30	instance_of Arg1:T20 Arg2:T9	
+R31	working_on Arg1:T2 Arg2:T20	
+R32	belongs_to Arg1:T20 Arg2:T16	
+T21	Person 2932 2933	我
+R33	same_mention Arg1:T21 Arg2:T1	
+T22	Person 1878 1879	I
+R34	same_mention Arg1:T22 Arg2:T2	

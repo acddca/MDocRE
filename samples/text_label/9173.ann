@@ -1,0 +1,38 @@
+T1	Location 1550 1557	阿灵顿国家公墓
+T2	Location 21 48	Arlington National Cemetery
+T3	Location 1696 1700	陆军基地
+R1	close_to Arg1:T1 Arg2:T3	
+T4	Location 466 478	an army base
+R2	close_to Arg1:T2 Arg2:T4	
+T7	Person 1907 1912	美国副总统
+T8	Person 1912 1917	迈克·彭斯
+R5	same_mention Arg1:T7 Arg2:T8	
+T5	Organization 527 531	U.S.
+T6	Organization 1711 1713	美国
+T9	Person 1729 1731	士兵
+T10	Person 1753 1754	我
+R3	same_mention Arg1:T10 Arg2:T9	
+R4	member_of Arg1:T9 Arg2:T6	
+T11	Person 568 576	soldiers
+T12	Person 666 667	I
+R6	same_mention Arg1:T12 Arg2:T11	
+R7	member_of Arg1:T11 Arg2:T5	
+T13	Object 1842 1848	敬献国旗仪式
+R8	working_on Arg1:T9 Arg2:T13	
+R9	belongs_to Arg1:T13 Arg2:T6	
+T14	Object 928 936	Flags In
+R10	belongs_to Arg1:T14 Arg2:T5	
+R11	working_on Arg1:T11 Arg2:T14	
+R12	leader_of Arg1:T8 Arg2:T6	
+R13	leader_of Arg1:T8 Arg2:T9	
+R14	working_on Arg1:T8 Arg2:T13	
+T15	Person 1077 1096	U.S. Vice President
+T16	Person 1097 1107	Mike Pence
+R15	same_mention Arg1:T15 Arg2:T16	
+R16	working_on Arg1:T16 Arg2:T14	
+R17	leader_of Arg1:T16 Arg2:T11	
+R18	leader_of Arg1:T16 Arg2:T5	
+T17	Location 2070 2077	阿灵顿国家公墓
+R19	same_mention Arg1:T17 Arg2:T1	
+T18	Location 1529 1547	Arlington Cemetery
+R20	same_mention Arg1:T18 Arg2:T2	
