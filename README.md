@@ -1,2 +1,2 @@
 # MDocRE
-Coming soon
+Resources for the Multimodal document-level relation extraction task
